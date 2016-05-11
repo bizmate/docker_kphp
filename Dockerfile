@@ -1,5 +1,5 @@
 FROM php:fpm
-MAINTAINER Diego Gullo <diegogullo@gmail.com>
+MAINTAINER Diego Gullo <diego_gullo@bizmate.biz>
 
 COPY oracle-instantclient12.1-basic_12.1.0.2.0-2_amd64.deb .
 COPY oracle-instantclient12.1-devel_12.1.0.2.0-2_amd64.deb .
