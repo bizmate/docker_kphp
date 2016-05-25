@@ -11,4 +11,6 @@ RUN apt-get update && apt-get install -y libaio1 \
     && instantclient,/usr/lib/oracle/12.1/client64/lib | pecl install oci8 \
     && docker-php-ext-enable oci8
 
-RUN docker-php-ext-install  opcache
+RUN pecl install xdebug \
+    && docker-php-ext-install  opcache \
+    && docker-php-ext-enable xdebug
